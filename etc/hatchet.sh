@@ -20,6 +20,6 @@ export HATCHET_BUILDPACK_BRANCH
 export HATCHET_RETRIES=3
 export HATCHET_APP_LIMIT=100
 export HATCHET_DEPLOY_STRATEGY=git
-export HATCHET_BUILDPACK_BASE="https://github.com/heroku/heroku-buildpack-nodejs"
+export HATCHET_BUILDPACK_BASE="https://github.com/systemist/heroku-buildpack-nodejs"
 
 bundle exec parallel_split_test "$@"

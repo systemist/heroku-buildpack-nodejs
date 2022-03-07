@@ -1,10 +1,10 @@
-ENV['HATCHET_BUILDPACK_BASE'] = 'https://github.com/heroku/heroku-buildpack-nodejs.git'
+ENV['HATCHET_BUILDPACK_BASE'] = 'https://github.com/systemist/heroku-buildpack-nodejs.git'
 
 require 'rspec/core'
 require 'hatchet'
 require 'fileutils'
 require 'hatchet'
-require 'rspec/retry'
+# require 'rspec/retry'
 require 'date'
 require 'json'
 require 'sem_version'
@@ -15,8 +15,8 @@ RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
   config.alias_example_to :fit, focused: true
   config.full_backtrace      = true
-  config.verbose_retry       = true # show retry status in spec process
-  config.default_retry_count = 2 # retry all tests that fail again
+  # config.verbose_retry       = true # show retry status in spec process
+  # config.default_retry_count = 2 # retry all tests that fail again
 
   config.expect_with :rspec do |c|
     c.syntax = :expect
